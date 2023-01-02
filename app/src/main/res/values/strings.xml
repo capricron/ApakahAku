@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Apakah Aku</string>
+    <string name="apakah_aku">Apakah Aku?</string>
+    <string name="tebak_nama_sesuai_gambar">Tebak nama sesuai gambar</string>
+    <string name="silahkan_pilih_mana_yang_kamu_tebak_gambarnya">Silahkan pilih mana yang kamu tebak gambarnya</string>
+    <string name="hewan">Hewan</string>
+    <string name="buah">Buah</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_hewan_started">HewanStarted</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_game_started">GameStarted</string>
+    <string name="apakah_kamu_siap">Apakah Kamu Siap?</string>
+    <string name="pada_menu_ini_kamu_akan_menebak_nama_hewan">Pada menu ini kamu akan menebak nama hewan</string>
+    <string name="mulai">Mulai !</string>
+    <string name="pertanyaan_1_5">Pertanyaan 1/5</string>
+    <string name="apa_nama_hewan_ini">Apa nama hewan ini?</string>
+    <string name="gambar">TODO</string>
+    <string name="kirim">kirim</string>
+</resources>

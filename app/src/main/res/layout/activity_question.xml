@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B91BA"
+    tools:context=".QuestionActivity">
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#1E5FDF"
+        android:text="@string/kirim"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_buah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_3"
+        tools:ignore="TextContrastCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/answer_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:text="@string/hewan"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_buah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_2"
+        tools:ignore="TextContrastCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/answer_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:text="@string/hewan"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_buah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gambar"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/answer_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:text="@string/hewan"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_buah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_1"
+        tools:ignore="TextContrastCheck,TextContrastCheck,UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/pertanyaan_1_5"
+        android:textAlignment="center"
+        android:textColor="#263238"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/apa_nama_hewan_ini"
+        android:textAlignment="center"
+        android:textColor="#263238"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_question" />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/gambar"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/answer_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</android.support.constraint.ConstraintLayout>
