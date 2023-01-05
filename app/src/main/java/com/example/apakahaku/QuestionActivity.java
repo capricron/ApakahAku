@@ -23,6 +23,7 @@ public class QuestionActivity extends AppCompatActivity  implements View.OnClick
     String jawabanBenar;
     Random random = new Random();
 
+
     TextView totalQuestionTextView,questionTextView;
     Button ans1,ans2,ans3,button_submit;
     ImageView gambar;
@@ -71,10 +72,9 @@ public class QuestionActivity extends AppCompatActivity  implements View.OnClick
     public void onClick(View v) {
         Button clickedButton = (Button) v;
 
-        ans1.setBackgroundColor(Color.WHITE);
-        ans2.setBackgroundColor(Color.WHITE);
-        ans3.setBackgroundColor(Color.WHITE);
-
+        ans1.setBackgroundDrawable(getResources().getDrawable(R.drawable.button));
+        ans2.setBackgroundDrawable(getResources().getDrawable(R.drawable.button));
+        ans3.setBackgroundDrawable(getResources().getDrawable(R.drawable.button));
 
         if(clickedButton.getId() == R.id.submit){
 
@@ -87,7 +87,7 @@ public class QuestionActivity extends AppCompatActivity  implements View.OnClick
 
         }else{
             selectedAnswer = clickedButton.getText().toString();
-            clickedButton.setBackgroundColor(Color.MAGENTA);
+            clickedButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.border_orange));
             suara.speak(selectedAnswer, TextToSpeech.QUEUE_FLUSH,null);
         }
     }
@@ -107,6 +107,7 @@ public class QuestionActivity extends AppCompatActivity  implements View.OnClick
         String menu = extras.getString(KEY_NAME);
 
         if(Objects.equals(menu, "hewan")){
+            questionTextView.setText("Apa nama hewan ini?");
             indexRandom = random.nextInt(QuestionAnswer.hewan.length);
             jawabanBenar = QuestionAnswer.hewan[indexRandom];
             totalQuestionTextView.setText("Pertanyaan " + (currentQuestionIndex+1) +"/5");
@@ -115,6 +116,7 @@ public class QuestionActivity extends AppCompatActivity  implements View.OnClick
 
             gambar.setImageResource(QuestionAnswer.gambarHewan[indexRandom]);
         }else if(Objects.equals(menu, "buah")){
+            questionTextView.setText("Apa nama buah ini?");
             indexRandom = random.nextInt(QuestionAnswer.buah.length);
             jawabanBenar = QuestionAnswer.buah[indexRandom];
             totalQuestionTextView.setText("Pertanyaan " + (currentQuestionIndex+1) +"/5");
