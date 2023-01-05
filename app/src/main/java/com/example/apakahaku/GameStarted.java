@@ -2,20 +2,15 @@ package com.example.apakahaku;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.Locale;
-
-
 public class GameStarted extends AppCompatActivity {
 
     private String menu;
     private final String KEY_NAME = "menu";
-    TextToSpeech suara;
 
     @SuppressLint("SetTextI18n")
     @Override
